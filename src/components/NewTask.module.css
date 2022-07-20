@@ -1,0 +1,28 @@
+.form {
+  display: flex;
+}
+.form input {
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  width: 100%;
+  height: 54px;
+  margin-right: 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.form button {
+  background: var(--blue-dark);
+  border: 0;
+  color: var(--white);
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.form button .iconAdd {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
