@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-top: 4rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--gray-400);
+}
+
+.header .createdTasks {
+  color: var(--blue);
+}
+
+.header .isCompleteTasks {
+  color: var(--purple);
+}
+
+.header div span {
+  background: var(--gray-400);
+  padding: 0.1rem 0.5rem;
+  color: var(--gray-200);
+  border-radius: 999px;
+  font-size: 0.8rem;
+}

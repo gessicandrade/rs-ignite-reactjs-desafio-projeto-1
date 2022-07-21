@@ -1,33 +1,50 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-  margin-top: 4rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--gray-400);
-}
 
-.header .createdTasks {
-  color: var(--blue);
-}
 
-.header .completedTasks {
-  color: var(--purple);
-}
-
-.header div span {
-  background: var(--gray-400);
-  padding: 0.1rem 0.5rem;
-  color: var(--gray-200);
-  border-radius: 999px;
-  font-size: 0.8rem;
-}
-
-.section {
+.sectionEmpty {
   text-align: center;
   padding: 4rem 0;
 }
 
-.section p {
+.sectionEmpty p {
   line-height: 1.4rem;
+}
+
+.section {
+  margin-top: 1.5rem;
+}
+.section ul {
+  list-style: none;
+}
+
+.section ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--gray-500);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.section ul li p {
+  flex: 1;
+  text-align: left;
+  color: var(--gray-100);
+}
+
+.section ul li p.isComplete {
+  text-decoration:line-through;
+  color: var(--gray-300);
+}
+
+.section ul li input {
+  margin-right: 0.75rem;
+}
+
+.section ul li button {
+  margin-left: 0.75rem;
+  border: 0;
+  background: transparent;
+  color: var(--gray-300);
+  font-size: 1rem;
 }

@@ -9,6 +9,7 @@
   margin-right: 0.5rem;
   padding: 1rem;
   border-radius: 8px;
+  color: var(--gray-300);
 }
 .form button {
   background: var(--blue-dark);
