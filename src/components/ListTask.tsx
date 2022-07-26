@@ -1,4 +1,4 @@
-import { ClipboardText, Trash } from "phosphor-react";
+import { Check, ClipboardText, Trash } from "phosphor-react";
 import styles from "./ListTask.module.css";
 import { ListTaskHeader } from "./ListTaskHeader";
 
@@ -44,7 +44,10 @@ export function ListTask({ tasks, setTasks }: ListTaskProps) {
           <ul>
             {tasks.map(task => (
             <li key={task.id}>
-              <input type="checkbox" onClick={() => handleClickTask(task.id)} />
+              <label>
+                <input type="checkbox" onClick={() => handleClickTask(task.id)} />
+                <span><Check className={styles.isComplete ? styles.iconCheckbox : ''} /></span>
+              </label>
               <p className={task.isComplete ? styles.isComplete : '' }>{task.title}</p>
               <button onClick={() => {handleDeleteTask(task.id)}} title="Deletar tarefa">
                 <Trash size={24} />

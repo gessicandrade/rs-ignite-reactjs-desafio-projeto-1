@@ -37,8 +37,43 @@
   color: var(--gray-300);
 }
 
-.section ul li input {
+.section ul li label {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 1rem;
+}
+
+.section ul li label input {
   margin-right: 0.75rem;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.section ul li label span {
+  background: transparent;
+  border-radius: 100%;
+  border: 2px solid var(--blue);
+  height: 18px;
+  width: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section ul li label span .iconCheckbox {
+  display: none;
+  font-size: 11px;
+  color: var(--gray-100);
+}
+
+.section ul li label:hover input ~ span, .section ul li label input:checked ~ span {
+  border: 2px solid var(--purple-dark);
+  cursor: pointer;
+  background: var(--purple-dark);
+}
+.section ul li label:hover input ~ span .iconCheckbox, .section ul li label input:checked ~ span .iconCheckbox {
+  display: block;
+  
 }
 
 .section ul li button {
@@ -47,4 +82,9 @@
   background: transparent;
   color: var(--gray-300);
   font-size: 1rem;
+  cursor: pointer;
+}
+
+.section ul li button:hover {
+  color: var(--danger);
 }
